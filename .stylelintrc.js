@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-prettier',
     'stylelint-config-recommended-less',
     'stylelint-config-standard-vue'
   ],
@@ -27,20 +26,7 @@ module.exports = {
     '**/*.yaml'
   ],
   rules: {
-    'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
-    'selector-pseudo-element-no-unknown': [
-      true,
-      {
-        ignorePseudoElements: ['v-deep']
-      }
-    ],
-    'selector-pseudo-class-no-unknown': [
-      true,
-      {
-        ignorePseudoClasses: ['deep']
-      }
-    ],
-    // 指定样式的排序
+    // 属性的排序
     'order/properties-order': [
       'position',
       'top',
